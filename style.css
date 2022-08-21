@@ -2,19 +2,25 @@ body{
   background-color:#eef9b7
 }
 
-.nomeJogo{
+
+.nome-Jogo{
   font-size: 56px;
   font-family:'Roboto', sans-serif;
   margin-top: 40px;
   margin-left: 325px;
   color:#75b79e
 }
+
+
 .baralho {
   display: flex;
   flex-wrap: wrap;
   margin-left:132px;
   margin-top: 50px;
+  
+  
 }
+
 .cartas {
   width: 117px;
   height: 146px;
@@ -22,6 +28,28 @@ body{
   margin-left: 30px;
   border-radius: 5px;
   margin-bottom: 30px;
+  position: relative;
+  transition: transform .2s;
+  transform-style: preserve-3d;
+}
+
+
+.virar {
+  transform: rotateY(180deg);
+}
+
+
+.carta-frente, .carta-verso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.carta-verso {
+  transform: rotateY(180deg);
 }
 
 .cartas img {
@@ -30,9 +58,3 @@ body{
   margin-top: 20px;
   margin-left: 10px;
 }
-
-
-
-
-
-
