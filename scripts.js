@@ -50,9 +50,8 @@ function virarCarta() {
       const divsViradas = document.querySelectorAll('.virar')
       if(qtdCartas == divsViradas.length){
         setTimeout(function(){
-          alert(`Voce ganhou com ${numCliques} cliques`)
-          iniciarJogo()
-        }, 2000)
+          alert(`Você ganhou com ${numCliques} cliques`)
+        }, 1000)
          
       }
     } 
@@ -64,7 +63,7 @@ function virarCarta() {
         divClicada.classList.remove("virar");
         podeJogar = true
         classNamePrimeiraDiv = "";
-      }, 500);
+      }, 900);
     }
   } else {
     classNamePrimeiraDiv = className;
